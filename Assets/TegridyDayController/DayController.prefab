@@ -1,0 +1,519 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &931872051900603775
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 931872051900603769}
+  - component: {fileID: 931872051900603768}
+  m_Layer: 0
+  m_Name: DayController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &931872051900603769
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931872051900603775}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &931872051900603768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931872051900603775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b1bbe046e25f074180546d3b8b0201a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skyBox: {fileID: 0}
+  mainLight: {fileID: 0}
+  backupLight: {fileID: 0}
+  SecondsInADay: 60
+  currentTime: 0.654
+  updateDelay: 0
+  startingWeekDay: 6
+  currentDay: 300
+  currentYear: 2024
+  defaultDay:
+    hoursInDay: 24
+    minutesInHour: 60
+    secondsInMinute: 60
+    riseTimeSun: 6
+    setTimeSun: 18
+    riseTimeSkyBox: 6
+    setTimeSkyBox: 19
+    skyboxDay: {fileID: 2100000, guid: 2bd8959f5fbd3644aa33af1a155fc147, type: 2}
+    skyboxNight: {fileID: 2100000, guid: cc421da483ed06c49933077a621bff25, type: 2}
+    skyMorning:
+      serializedVersion: 2
+      rgba: 4294967295
+    skyAfternoon:
+      serializedVersion: 2
+      rgba: 4278190335
+    skyboxFade:
+      serializedVersion: 2
+      rgba: 0
+    sunMorning:
+      serializedVersion: 2
+      rgba: 4278236142
+    sunAfternoon:
+      serializedVersion: 2
+      rgba: 4278714112
+  weekDays:
+  - dayName: Monday
+  - dayName: Tuesday
+  - dayName: Wednesday
+  - dayName: Thursday
+  - dayName: Friday
+  - dayName: Saturday
+  - dayName: Sunday
+  months:
+  - monthName: January
+    daysInMonth: 31
+    leepMonth: 0
+    yearsBetween: 3
+    extraDays: 100
+    sunChangeDelay: 0.1
+    sunChangeAmmount: 0.01
+    skyboxChangeDelay: 0.1
+    skyboxChangeAmmount: 0.01
+    dayConfig:
+      hoursInDay: 0
+      minutesInHour: 0
+      secondsInMinute: 0
+      riseTimeSun: 5
+      setTimeSun: 16
+      riseTimeSkyBox: 5
+      setTimeSkyBox: 16
+      skyboxDay: {fileID: 0}
+      skyboxNight: {fileID: 0}
+      skyMorning:
+        serializedVersion: 2
+        rgba: 0
+      skyAfternoon:
+        serializedVersion: 2
+        rgba: 0
+      skyboxFade:
+        serializedVersion: 2
+        rgba: 0
+      sunMorning:
+        serializedVersion: 2
+        rgba: 0
+      sunAfternoon:
+        serializedVersion: 2
+        rgba: 0
+    configured: 0
+  - monthName: Febuary
+    daysInMonth: 28
+    leepMonth: 1
+    yearsBetween: 4
+    extraDays: 1
+    sunChangeDelay: 0.1
+    sunChangeAmmount: 0.01
+    skyboxChangeDelay: 0.1
+    skyboxChangeAmmount: 0.01
+    dayConfig:
+      hoursInDay: 0
+      minutesInHour: 0
+      secondsInMinute: 0
+      riseTimeSun: 0
+      setTimeSun: 0
+      riseTimeSkyBox: 0
+      setTimeSkyBox: 0
+      skyboxDay: {fileID: 0}
+      skyboxNight: {fileID: 0}
+      skyMorning:
+        serializedVersion: 2
+        rgba: 0
+      skyAfternoon:
+        serializedVersion: 2
+        rgba: 0
+      skyboxFade:
+        serializedVersion: 2
+        rgba: 0
+      sunMorning:
+        serializedVersion: 2
+        rgba: 0
+      sunAfternoon:
+        serializedVersion: 2
+        rgba: 0
+    configured: 0
+  - monthName: March
+    daysInMonth: 31
+    leepMonth: 0
+    yearsBetween: 3
+    extraDays: 100
+    sunChangeDelay: 0.1
+    sunChangeAmmount: 0.01
+    skyboxChangeDelay: 0.1
+    skyboxChangeAmmount: 0.01
+    dayConfig:
+      hoursInDay: 0
+      minutesInHour: 0
+      secondsInMinute: 0
+      riseTimeSun: 0
+      setTimeSun: 0
+      riseTimeSkyBox: 0
+      setTimeSkyBox: 0
+      skyboxDay: {fileID: 0}
+      skyboxNight: {fileID: 0}
+      skyMorning:
+        serializedVersion: 2
+        rgba: 0
+      skyAfternoon:
+        serializedVersion: 2
+        rgba: 0
+      skyboxFade:
+        serializedVersion: 2
+        rgba: 0
+      sunMorning:
+        serializedVersion: 2
+        rgba: 0
+      sunAfternoon:
+        serializedVersion: 2
+        rgba: 0
+    configured: 0
+  - monthName: April
+    daysInMonth: 30
+    leepMonth: 0
+    yearsBetween: 3
+    extraDays: 100
+    sunChangeDelay: 0.1
+    sunChangeAmmount: 0.01
+    skyboxChangeDelay: 0.1
+    skyboxChangeAmmount: 0.01
+    dayConfig:
+      hoursInDay: 0
+      minutesInHour: 0
+      secondsInMinute: 0
+      riseTimeSun: 0
+      setTimeSun: 0
+      riseTimeSkyBox: 0
+      setTimeSkyBox: 0
+      skyboxDay: {fileID: 0}
+      skyboxNight: {fileID: 0}
+      skyMorning:
+        serializedVersion: 2
+        rgba: 0
+      skyAfternoon:
+        serializedVersion: 2
+        rgba: 0
+      skyboxFade:
+        serializedVersion: 2
+        rgba: 0
+      sunMorning:
+        serializedVersion: 2
+        rgba: 0
+      sunAfternoon:
+        serializedVersion: 2
+        rgba: 0
+    configured: 0
+  - monthName: May
+    daysInMonth: 31
+    leepMonth: 0
+    yearsBetween: 3
+    extraDays: 100
+    sunChangeDelay: 0.1
+    sunChangeAmmount: 0.01
+    skyboxChangeDelay: 0.1
+    skyboxChangeAmmount: 0.01
+    dayConfig:
+      hoursInDay: 0
+      minutesInHour: 0
+      secondsInMinute: 0
+      riseTimeSun: 0
+      setTimeSun: 0
+      riseTimeSkyBox: 0
+      setTimeSkyBox: 0
+      skyboxDay: {fileID: 0}
+      skyboxNight: {fileID: 0}
+      skyMorning:
+        serializedVersion: 2
+        rgba: 0
+      skyAfternoon:
+        serializedVersion: 2
+        rgba: 0
+      skyboxFade:
+        serializedVersion: 2
+        rgba: 0
+      sunMorning:
+        serializedVersion: 2
+        rgba: 0
+      sunAfternoon:
+        serializedVersion: 2
+        rgba: 0
+    configured: 0
+  - monthName: June
+    daysInMonth: 30
+    leepMonth: 0
+    yearsBetween: 3
+    extraDays: 100
+    sunChangeDelay: 0.1
+    sunChangeAmmount: 0.01
+    skyboxChangeDelay: 0.1
+    skyboxChangeAmmount: 0.01
+    dayConfig:
+      hoursInDay: 0
+      minutesInHour: 0
+      secondsInMinute: 0
+      riseTimeSun: 0
+      setTimeSun: 0
+      riseTimeSkyBox: 0
+      setTimeSkyBox: 0
+      skyboxDay: {fileID: 0}
+      skyboxNight: {fileID: 0}
+      skyMorning:
+        serializedVersion: 2
+        rgba: 0
+      skyAfternoon:
+        serializedVersion: 2
+        rgba: 0
+      skyboxFade:
+        serializedVersion: 2
+        rgba: 0
+      sunMorning:
+        serializedVersion: 2
+        rgba: 0
+      sunAfternoon:
+        serializedVersion: 2
+        rgba: 0
+    configured: 0
+  - monthName: July
+    daysInMonth: 31
+    leepMonth: 0
+    yearsBetween: 3
+    extraDays: 100
+    sunChangeDelay: 0.1
+    sunChangeAmmount: 0.01
+    skyboxChangeDelay: 0.1
+    skyboxChangeAmmount: 0.01
+    dayConfig:
+      hoursInDay: 0
+      minutesInHour: 0
+      secondsInMinute: 0
+      riseTimeSun: 0
+      setTimeSun: 0
+      riseTimeSkyBox: 0
+      setTimeSkyBox: 0
+      skyboxDay: {fileID: 0}
+      skyboxNight: {fileID: 0}
+      skyMorning:
+        serializedVersion: 2
+        rgba: 0
+      skyAfternoon:
+        serializedVersion: 2
+        rgba: 0
+      skyboxFade:
+        serializedVersion: 2
+        rgba: 0
+      sunMorning:
+        serializedVersion: 2
+        rgba: 0
+      sunAfternoon:
+        serializedVersion: 2
+        rgba: 0
+    configured: 0
+  - monthName: August
+    daysInMonth: 31
+    leepMonth: 0
+    yearsBetween: 3
+    extraDays: 100
+    sunChangeDelay: 0.1
+    sunChangeAmmount: 0.01
+    skyboxChangeDelay: 0.1
+    skyboxChangeAmmount: 0.01
+    dayConfig:
+      hoursInDay: 0
+      minutesInHour: 0
+      secondsInMinute: 0
+      riseTimeSun: 0
+      setTimeSun: 0
+      riseTimeSkyBox: 0
+      setTimeSkyBox: 0
+      skyboxDay: {fileID: 0}
+      skyboxNight: {fileID: 0}
+      skyMorning:
+        serializedVersion: 2
+        rgba: 0
+      skyAfternoon:
+        serializedVersion: 2
+        rgba: 0
+      skyboxFade:
+        serializedVersion: 2
+        rgba: 0
+      sunMorning:
+        serializedVersion: 2
+        rgba: 0
+      sunAfternoon:
+        serializedVersion: 2
+        rgba: 0
+    configured: 0
+  - monthName: September
+    daysInMonth: 30
+    leepMonth: 0
+    yearsBetween: 3
+    extraDays: 100
+    sunChangeDelay: 0.1
+    sunChangeAmmount: 0.01
+    skyboxChangeDelay: 0.1
+    skyboxChangeAmmount: 0.01
+    dayConfig:
+      hoursInDay: 0
+      minutesInHour: 0
+      secondsInMinute: 0
+      riseTimeSun: 0
+      setTimeSun: 0
+      riseTimeSkyBox: 0
+      setTimeSkyBox: 0
+      skyboxDay: {fileID: 0}
+      skyboxNight: {fileID: 0}
+      skyMorning:
+        serializedVersion: 2
+        rgba: 0
+      skyAfternoon:
+        serializedVersion: 2
+        rgba: 0
+      skyboxFade:
+        serializedVersion: 2
+        rgba: 0
+      sunMorning:
+        serializedVersion: 2
+        rgba: 0
+      sunAfternoon:
+        serializedVersion: 2
+        rgba: 0
+    configured: 0
+  - monthName: October
+    daysInMonth: 31
+    leepMonth: 0
+    yearsBetween: 3
+    extraDays: 100
+    sunChangeDelay: 0.1
+    sunChangeAmmount: 0.01
+    skyboxChangeDelay: 0.1
+    skyboxChangeAmmount: 0.01
+    dayConfig:
+      hoursInDay: 0
+      minutesInHour: 0
+      secondsInMinute: 0
+      riseTimeSun: 0
+      setTimeSun: 0
+      riseTimeSkyBox: 0
+      setTimeSkyBox: 0
+      skyboxDay: {fileID: 0}
+      skyboxNight: {fileID: 0}
+      skyMorning:
+        serializedVersion: 2
+        rgba: 0
+      skyAfternoon:
+        serializedVersion: 2
+        rgba: 0
+      skyboxFade:
+        serializedVersion: 2
+        rgba: 0
+      sunMorning:
+        serializedVersion: 2
+        rgba: 0
+      sunAfternoon:
+        serializedVersion: 2
+        rgba: 0
+    configured: 0
+  - monthName: November
+    daysInMonth: 30
+    leepMonth: 0
+    yearsBetween: 3
+    extraDays: 100
+    sunChangeDelay: 0.1
+    sunChangeAmmount: 0.01
+    skyboxChangeDelay: 0.1
+    skyboxChangeAmmount: 0.01
+    dayConfig:
+      hoursInDay: 0
+      minutesInHour: 0
+      secondsInMinute: 0
+      riseTimeSun: 0
+      setTimeSun: 0
+      riseTimeSkyBox: 0
+      setTimeSkyBox: 0
+      skyboxDay: {fileID: 0}
+      skyboxNight: {fileID: 0}
+      skyMorning:
+        serializedVersion: 2
+        rgba: 0
+      skyAfternoon:
+        serializedVersion: 2
+        rgba: 0
+      skyboxFade:
+        serializedVersion: 2
+        rgba: 0
+      sunMorning:
+        serializedVersion: 2
+        rgba: 0
+      sunAfternoon:
+        serializedVersion: 2
+        rgba: 0
+    configured: 0
+  - monthName: December
+    daysInMonth: 31
+    leepMonth: 0
+    yearsBetween: 3
+    extraDays: 100
+    sunChangeDelay: 0.1
+    sunChangeAmmount: 0.01
+    skyboxChangeDelay: 0.1
+    skyboxChangeAmmount: 0.01
+    dayConfig:
+      hoursInDay: 0
+      minutesInHour: 0
+      secondsInMinute: 0
+      riseTimeSun: 0
+      setTimeSun: 0
+      riseTimeSkyBox: 0
+      setTimeSkyBox: 0
+      skyboxDay: {fileID: 0}
+      skyboxNight: {fileID: 0}
+      skyMorning:
+        serializedVersion: 2
+        rgba: 0
+      skyAfternoon:
+        serializedVersion: 2
+        rgba: 0
+      skyboxFade:
+        serializedVersion: 2
+        rgba: 0
+      sunMorning:
+        serializedVersion: 2
+        rgba: 0
+      sunAfternoon:
+        serializedVersion: 2
+        rgba: 0
+    configured: 0
+  displaySeconds: 
+  displayMinutes: 
+  displayerHours: 
+  displayDay: 
+  displayDayOfMonth: 
+  displayMonth: 
+  displayMonthNumber: 
+  yearLength: 0
+  displayHandSec: 0
+  displayHandMin: 0
+  displayHandHou: 0
